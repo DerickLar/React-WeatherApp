@@ -1,0 +1,134 @@
+.weather{
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-bar input{
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #5f5f5f;
+    background: #ebfffc96;
+    font-size: 18px;
+}
+
+.search-bar img{
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ebfffcbb;
+    cursor: pointer;
+}
+
+.weather-icon{
+    width: 150px;
+    margin: 30px 0;
+}
+
+.description{
+    color: #fff;
+    font-size: 25px;
+    line-height: 1;  
+}
+
+.temperature{
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+}
+
+.location{
+    color: #fff;
+    font-size: 40px;
+}
+
+.weather-data{
+    width: 100%;
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-data .col{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 22px;
+}
+
+.weather-data .col span{
+    display: block;
+    font-size: 16px;
+}
+
+.weather-data .col img{
+    width: 26px;
+    margin-top: 10px;
+}
+
+.toggle-btn {
+  background-color: #0077ff5d;
+  border: 1px solid #978a8a9a;
+  border-radius: 99px;
+  width: 50px;
+  height: 28px;
+  transition: background-color 0.1s ease, border-color 0.2s ease;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.748);
+  backdrop-filter: blur(5px);
+  position: relative;
+  right: 43%;
+  top: 30px;
+}
+
+.toggle-btn .thumb{
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 99px;
+  transform: translateX(0);
+  transition: left 0.15s ease;
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggle-btn.toggled{
+  background-color: #ff0000bb;
+}
+
+.toggle-btn:hover{
+  background-color: #033a79a9;
+}
+
+.toggle-btn.toggled .thumb{
+  left: calc(50px - 25px)
+}
+
+.toggle-btn.toggled:hover{
+  background-color: #7a0808d7;
+}
+
+.time{
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    left: 40%;
+}
